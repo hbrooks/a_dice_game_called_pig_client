@@ -29,4 +29,4 @@ The current `Game`'s state is found under `state` and is either `AWAITING_TURN` 
 ### Using the Client:
 1.  First, `export PIG_API_ENDPOINT='https://fdw9nciwsd.execute-api.us-east-1.amazonaws.com/dev'`.
 2.  Then, `python interactive_client.py`.  The interactive client will display game state and allow you the choose which turn to conduct.  View the `allowedNextTurns` field of the `Game` object and supply a Turn Choice Identifier to the client.  Turn Choice Indetifiers are keys within the `allowedNextTurns` field.  
-
+    -   Note: The first API may take several seconds.  Subsequent calls won't have this problem.
